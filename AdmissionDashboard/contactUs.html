@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+        crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+
+    <style>
+        body {
+            background-color: rgb(235, 240, 190);
+        }
+
+        .card-form {
+            margin: 30px auto;
+            background-color: rgb(240, 248, 171);
+            border: solid rgb(35, 161, 119);
+            border-radius: 10px;
+            padding: 20px 20px;
+            width:400px;
+            
+
+        }
+
+        .icon {
+            margin: auto;
+        }
+
+        .nav {
+            background-color: rgb(150, 206, 19);
+        }
+
+        .nav a {
+            color: aliceblue;
+        }
+
+        .box h1 {
+            font-family: sans-serif;
+        }
+        label{
+            width: 70px;
+            
+        }
+    </style>
+</head>
+
+<body>
+    <!--KPJHU logo image-->
+
+    <div class="d-inline-flex p-2">
+        <div class="box">
+            <img src="assets/KPJUni Logo-01.png" class="rounded" alt="KPJHUlogo" style="width:18rem">
+        </div>
+        <div class="box">
+            <h1 style="margin:20px 20px 0px 20px"><b>Department of Admission</b></h>
+        </div>
+    </div>
+
+    <!--Navigation bar-->
+    <div class="border solid">
+
+        <ul class="nav justify-content-center shadow">
+            <li class="nav-item" >
+                <a class="nav-link" href="dashboard.html">Dashboard</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Admission Info</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Contact Us</a>
+            </li>
+        </ul>
+    </div>
+
+<!--start contact form-->
+    <fieldset class="card-form">
+        <legend>Contact Form</legend>
+        <form name="frmContact" method="post" action="contact.php">
+            
+            <div class="mb-3 row">
+            
+                    <label for="Name" class="col-sm-2 col-form-label">Name </label>
+                    <div class="col-sm-10">
+                    <input class="form-control" type="text" name="txtName" id="txtName">
+                    </div>
+                    
+                
+            </div>
+            
+            <div class="mb-3 row">
+                <label for="email" class="col-sm-2 col-form-label">Email</label>
+                <div class="col-sm-10"><input class="form-control" type="text" name="txtEmail" id="txtEmail"></div>
+                
+            </div>
+            <div class="mb-3 row">
+                <label for="phone" class="col-sm-2 col-form-label">Phone</label>
+                <div class="col-sm-10"><input class="form-control" type="text" name="txtPhone" id="txtPhone"></div>
+                
+            </div>
+            <p>
+                <label for="message" class="col-sm-2 col-form-label">Message</label>
+                <textarea class="form-control" name="txtMessage" id="txtMessage" cols="30" rows="3"></textarea>
+            </p>
+            <p>&nbsp;</p>
+            <p>
+                <input class="btn btn-primary shadow" type="submit" name="Submit" id="Submit" value="Submit">
+            </p>
+            </div>
+        </form>
+    </fieldset>
+</body>
+
+</html>
